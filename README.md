@@ -23,3 +23,21 @@
 All-in-one image restoration tackles different types of degradations with a unified model instead of having task-specific, non-generic models for each degradation. The requirement to tackle multiple degradations using the same model can lead to high-complexity designs with fixed configurations that lack the adaptability to more efficient alternatives. We propose DyNet, a dynamic family of networks designed in an encoder-decoder style for all-in-one image restoration tasks. Our DyNet can seamlessly switch between its bulkier and lightweight variants, thereby offering flexibility for efficient model deployment with a single round of training. This seamless switching is enabled by our weights-sharing mechanism, forming the core of our architecture and facilitating the reuse of initialized module weights. Further, to establish robust weights initialization, we introduce a dynamic pre-training strategy that trains variants of the proposed DyNet concurrently, thereby achieving a 50% reduction in GPU hours. To tackle the unavailability of a large-scale dataset required in pre-training, we curate a high-quality, high-resolution image dataset named Million-IRD, having 2M image samples. We validate our DyNet for image denoising, deraining, and dehazing in an all-in-one setting, achieving state-of-the-art results with 31.34% reduction in GFlops and a 56.75% reduction in parameters compared to baseline models
 </details>
 
+<img src="Picture1.jpg" width="80%"/>
+<img src="video.gif" width="80%"/>
+
+
+## Citation
+if you use our work, please consider citing us:
+```BibTeX
+@misc{dudhane2024dynamic,
+      title={Dynamic Pre-training: Towards Efficient and Scalable All-in-One Image Restoration}, 
+      author={Akshay Dudhane and Omkar Thawakar and Syed Waqas Zamir and Salman Khan and Ming-Hsuan Yang and Fahad Shahbaz Khan},
+      year={2024},
+      eprint={2404.02154},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+```
+
