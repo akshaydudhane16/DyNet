@@ -74,8 +74,6 @@ DyNet-S model achieves a 0.59 dB average improvement over PromptIR [36], with
 reductions of 31.34% in parameters and 56.75% in GFlops.
 <img src = "all_in_one_results_table.png"> 
 
-<summary><strong>Visual Results</strong></summary>
-
 
 
 
